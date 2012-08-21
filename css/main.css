@@ -1,0 +1,88 @@
+/*
+	teal:		(120,192,168,1)
+	dk teal:	(96,154,134,1)
+	yellow:		(240,168,48,1)
+	tan:		(252,235,182,1)
+	dk tan:		(215,200,155,1)
+	orange:		(240,120,23,1)
+	brown:		(94,65,47,1)
+*/
+body{
+	margin:0;
+	padding:0;
+	font-family:'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+	font-size:62.5%;
+}
+#container{
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255,240,191,1) 0%, rgba(252,215,101,1) 100%);
+	position:relative;
+	z-index:1;
+	min-height:768px !important;
+}
+#container:before{
+	content:"";
+	position:absolute;
+	z-index:-1;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background:url(../images/groovepaper_texture.png)repeat;
+}
+#wrapper{
+	margin:0 auto;
+	width:100%;
+	max-width:760px;
+	//background-color:lightblue;
+}
+h1{
+	display:block;
+	width:250px;
+	height:115px;
+	background:url(../images/logo.png)no-repeat center bottom;
+	margin:0 auto 0;
+	padding:50px 0 0;
+}
+section{
+	width:100%;	 
+	min-height:500px;
+	background-color:rgba(120,192,168,1);
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 1);
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .25);
+	margin:25px 0 0 0;
+}
+nav{
+	margin:0;padding:0;
+	width:100%;
+}
+nav ul{
+	margin:0;padding:0;
+	list-style:none;
+	overflow:hidden;
+}
+nav li{
+	float:left;
+	width:33.33333%;
+	text-align:center;
+}
+nav a{
+	display:block;
+	width:85%;
+	background-color:rgba(96,154,134,1);
+	background-position:37% center;
+	background-repeat:no-repeat;
+	background-size:24px 16.5px;
+	padding:10px 0 6px 15%;
+	text-decoration:none;
+	color:rgba(252,235,182,1);
+	font-size:1.8em;
+}
+a.what{background-image:url(../images/iconEye.png);}
+a.when{background-image:url(../images/iconClock.png);}
+a.who{background-image:url(../images/iconSilhouette.png);}
+nav a.active{background-color:rgba(120,192,168,1);}
+nav li:last-child a{-webkit-border-radius: 0 6px 0 0;border-radius: 0 6px 0 0;}
+nav li:first-child a{-webkit-border-radius: 6px 0 0 0;border-radius: 6px 0 0 0;}
+nav a:hover{-webkit-transition: all .25s linear;background-color:rgba(120,192,168,1);}
